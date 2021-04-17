@@ -8,7 +8,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img className="cardHeaderImage" style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
     )
   }
 

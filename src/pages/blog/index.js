@@ -5,21 +5,22 @@ import BlogRoll from '../../components/BlogRoll'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faFacebook, faTwitter, faPinterest, faGooglePlusG, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { fab, faFacebook, faTwitter, faPinterest, faMedium, faInstagram, faGooglePlusG } from "@fortawesome/free-brands-svg-icons"
 // import { faCheckSquare, faTable, faCoffee } from '@fortawesome/free-solid-svg-icons'
 
-library.add(fab, faFacebook, faTwitter, faPinterest, faGooglePlusG,faInstagram)
-const fbIcon = <FontAwesomeIcon style={{ color: '#4267B2', 'margin': '0px 10px 10px 0px', 'width': '35px' }} icon={faFacebook} />
-const twitterIcon = <FontAwesomeIcon style={{ color: '#1DA1F2', 'margin': '0px 10px 10px 10px', 'width': '35px' }} icon={faTwitter} />
-const pinIcon = <FontAwesomeIcon style={{ color: '#E60023', 'margin': '0px 10px 10px 10px', 'width': '35px' }} icon={faPinterest} />
-const googleIcon = <FontAwesomeIcon style={{ color: '#db4a39', 'margin': '0px 10px 10px 10px', 'width': '35px' }} className="googleIcon" icon={faGooglePlusG} />
-const instaIcon = <FontAwesomeIcon style={{ color: '#833AB4', 'margin': '0px 10px 10px 10px', 'width': '35px' }} icon={faInstagram} />
+library.add(fab, faFacebook, faTwitter, faPinterest, faMedium, faInstagram, faGooglePlusG)
+const fbIcon = <FontAwesomeIcon style={{ color: '#4267B2', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} icon={faFacebook} />
+const twitterIcon = <FontAwesomeIcon style={{ color: '#1DA1F2', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} icon={faTwitter} />
+const instaIcon = <FontAwesomeIcon style={{ color: '#833AB4', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} icon={faInstagram} />
+const googleIcon = <FontAwesomeIcon style={{ color: '#db4a39', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} className="googleIcon" icon={faGooglePlusG} />
+const mediumIcon = <FontAwesomeIcon style={{ color: 'black', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} className="googleIcon" icon={faMedium} />
+const pinIcon = <FontAwesomeIcon style={{ color: '#E60023', 'margin': '0px 0px 10px 0px', 'fontSize': '25px', 'width': '40px' }} icon={faPinterest} />
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        {/* <div
+        <div
           className="full-width-image-container margin-top-0"
           style={{
             backgroundImage: `url('/img/blog-index.jpg')`,
@@ -34,16 +35,17 @@ export default class BlogIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Latest Stories index.js
+            Our Creative Stories
           </h1>
-        </div> */}
+        </div>
         <div style={{ 'margin': 'auto', 'width': '95%', "textAlign": 'center' }} className="columns">
           <div className="column ">
-            <img src="https://via.placeholder.com/728x100?text=728x90+LeaderboardC/Ohttps://placeholder.com/banner-ads/" />
-          </div>
+            <div className="placeHolderDiv"   >
+              {/* <img src="https://via.placeholder.com/728x100?text=728x90+LeaderboardC/Ohttps://placeholder.com/banner-ads/" /> */}
+            </div>          </div>
           <div className="column ">
-            <div style={{ 'height': '75px' }}>
-              <img src="https://via.placeholder.com/728x100?text=728x90+LeaderboardC/Ohttps://placeholder.com/banner-ads/" />
+            <div className="placeHolderDiv"   >
+              {/* <img src="https://via.placeholder.com/728x100?text=728x90+LeaderboardC/Ohttps://placeholder.com/banner-ads/" /> */}
             </div>
           </div>
           <div className="column">
@@ -58,7 +60,11 @@ export default class BlogIndexPage extends React.Component {
                 {instaIcon}
               </a>
 
-              <a title="googlePlus" target="_blank" href="https://google.com">
+
+              <a title="googlePlus" target="_blank" href="https://medium.com">
+                {mediumIcon}
+              </a>
+              <a title="googlePlus" target="_blank" href="mailto:jeffreyyourman@gmail.com">
                 {googleIcon}
               </a>
 

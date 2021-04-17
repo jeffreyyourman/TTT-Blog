@@ -4,16 +4,16 @@ import { Link } from 'gatsby'
 import logo from '../img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab, faFacebook, faTwitter, faPinterest, faGooglePlusG, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { fab, faFacebook, faTwitter, faPinterest, faMedium, faInstagram, faGooglePlusG } from "@fortawesome/free-brands-svg-icons"
 
-library.add(fab, faFacebook, faTwitter, faPinterest, faGooglePlusG, faInstagram)
+library.add(fab, faFacebook, faTwitter, faPinterest, faMedium, faInstagram, faGooglePlusG)
 
 const fbIcon = <FontAwesomeIcon style={{ color: '#4267B2', 'margin': '0px 20px 10px 0px', 'width': '35px' }} icon={faFacebook} />
 const twitterIcon = <FontAwesomeIcon style={{ color: '#1DA1F2', 'margin': '0px 20px 10px 0px', 'width': '35px' }} icon={faTwitter} />
 const pinIcon = <FontAwesomeIcon style={{ color: '#E60023', 'margin': '0px 20px 10px 0px', 'width': '35px' }} icon={faPinterest} />
-const googleIcon = <FontAwesomeIcon style={{ color: '#db4a39', 'margin': '0px 20px 10px 0px', 'width': '35px' }} className="googleIcon" icon={faGooglePlusG} />
+const mediumIcon = <FontAwesomeIcon style={{ color: 'white', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} className="googleIcon" icon={faMedium} />
+const googleIcon = <FontAwesomeIcon style={{ color: '#db4a39', 'margin': '0px 20px 10px 0px', 'fontSize': '25px', 'width': '40px' }} className="googleIcon" icon={faGooglePlusG} />
 const instaIcon = <FontAwesomeIcon style={{ color: '#833AB4', 'margin': '0px 20px 10px 0px', 'width': '35px' }} icon={faInstagram} />
-
 
 const Footer = class extends React.Component {
   render() {
@@ -65,8 +65,11 @@ const Footer = class extends React.Component {
                     <a title="instagram" target="_blank" href="https://instagram.com">
                       {instaIcon}
                     </a>
+                    <a title="googlePlus" target="_blank" href="https://medium.com">
+                      {mediumIcon}
+                    </a>
 
-                    <a title="googlePlus" target="_blank" href="https://google.com">
+                    <a title="googlePlus" target="_blank" href="mailto:jeffreyyourman@gmail.com">
                       {googleIcon}
                     </a>
 

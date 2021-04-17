@@ -40,7 +40,6 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <h1>Contact</h1>
-              <div className="box">
               <form
                 name="contact"
                 method="post"
@@ -107,7 +106,6 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
-              </div>
             </div>
           </div>
         </section>

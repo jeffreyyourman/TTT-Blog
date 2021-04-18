@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: "Quick Hit #1: How to get out of VIM in terminal"
+title: How to get out of VIM within the terminal
 date: 2021-04-18T05:03:36.326Z
 description: "Quick Hit #1: How to get out of VIM in terminal"
 featuredpost: false

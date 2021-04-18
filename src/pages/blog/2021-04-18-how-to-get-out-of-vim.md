@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: How to get out of VIM
+title: How to get out of VIM2
 date: 2021-04-18T05:03:36.326Z
 description: How to get out of VIM in terminal
 featuredpost: false
@@ -19,6 +19,6 @@ Hi All! Welcome to Ako.Dev's first of many blog posts. I am excited to be here w
 
 `Hit "esc" then type ":wq" and hit enter to save your choice.`
 
-That's right! It's as easy as that! Once you see that screen. You type the above message and it will bring you out of that screen to continue on with your git commands. ``
+That's right! It's as easy as that! Once you see that screen. You type the above message and it will bring you out of that screen to continue on with your git commands. 
 
 Please continue to follow us to create a community of amazing developers always willing to learn and become better individuals and a better person!
